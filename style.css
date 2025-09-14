@@ -1,0 +1,94 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  background: #004080;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin-top: 40px;
+  color: #333;
+}
+
+.btn-animate {
+  margin: 20px;
+  padding: 12px 24px;
+  border: none;
+  background: #008CBA;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.4s ease, transform 0.3s ease;
+}
+
+.btn-animate:hover {
+  background: #006f94;
+  transform: scale(1.1);
+}
+
+.room-card {
+  width: 200px;
+  height: 120px;
+  margin: 20px auto;
+  background: url('https://source.unsplash.com/400x300/?hotel-room') center/cover no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.5s ease, background 0.5s ease;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.room-card.active {
+  animation: bounce 1s ease infinite;
+  border: 3px solid tomato;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  animation: fadeIn 0.4s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; } 
+  to { opacity: 1; }
+}
+
+.modal-content {
+  background: white;
+  margin: 15% auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  animation: slideDown 0.4s;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.close {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
