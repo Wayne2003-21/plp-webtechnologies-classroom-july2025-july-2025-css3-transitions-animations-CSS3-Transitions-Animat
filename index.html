@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Palace Hotel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🏨 Welcome to Grand Palace Hotel</h1>
+    <p>Experience luxury, comfort, and unforgettable stays.</p>
+  </header>
+
+  <button class="btn-animate">Book Now</button>
+
+  <section>
+    <h2>Our Premium Room</h2>
+    <div class="room-card" id="roomCard"></div>
+    <button onclick="highlightRoom()">Highlight Room</button>
+  </section>
+
+  <section>
+    <button onclick="toggleModal()">View Special Offers</button>
+    <div class="modal" id="offerModal">
+      <div class="modal-content">
+        <span class="close" onclick="toggleModal()">&times;</span>
+        <h2>🎉 Special Offer</h2>
+        <p>Stay 3 nights, pay for 2! Breakfast included 🍳</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Grand Palace Hotel </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
